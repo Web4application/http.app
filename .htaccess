@@ -1,0 +1,7 @@
+AuthType Basic
+AuthUserFile /var/local/secure/.htpass
+AuthName secure
+require valid-user
+satisfy any
+GET /documents/tech-news HTTP/1.1
+Host: www.example.re
